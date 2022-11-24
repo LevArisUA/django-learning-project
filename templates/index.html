@@ -1,3 +1,11 @@
 <h1>First page</h1>
-<h2>{{ a }}</h2>
-<h3>{{ b }}</h3>
+<h2>{{ object_list }}</h2>
+
+{% for object in object_list %}
+
+<h3>{{ object.id }}</h3>
+<h3>{{ object.orders_name }}</h3>
+<h3>{{ object.orders_phone_num }}</h3>
+<h3>{{ object.orders_date_time }}</h3>
+
+{% endfor %}
